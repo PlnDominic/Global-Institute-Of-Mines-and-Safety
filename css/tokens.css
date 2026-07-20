@@ -1,0 +1,154 @@
+/* GIMS Design System tokens
+   Source: claude.ai/design — gims-design-system
+   Safety orange on near-black steel, hi-vis semantics. */
+
+/* Webfonts — Oswald (display) + Barlow (body) + Space Mono (mono) */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+  /* Brand — Safety Orange (sampled from the GIMS crest) */
+  --gims-orange-50:#fff4e8;
+  --gims-orange-100:#ffe3c4;
+  --gims-orange-200:#ffc888;
+  --gims-orange-300:#ffab4d;
+  --gims-orange-400:#fb9020;
+  --gims-orange-500:#f87800;   /* primary brand orange */
+  --gims-orange-600:#d96600;
+  --gims-orange-700:#b35200;
+  --gims-orange-800:#8a3f00;
+  --gims-orange-900:#5e2b00;
+
+  /* Ink / steel neutrals */
+  --steel-950:#0d0f12;
+  --steel-900:#141619;   /* crest black / primary ink */
+  --steel-800:#1e2126;
+  --steel-700:#2b2f36;
+  --steel-600:#3d434c;
+  --steel-500:#5a616b;
+  --steel-400:#828a94;
+  --steel-300:#aab1b9;
+  --steel-200:#cdd2d7;
+  --steel-100:#e6e9ec;
+  --steel-50:#f4f6f7;
+  --white:#ffffff;
+
+  /* Hi-vis + semantic (mining/safety signage) */
+  --hivis-yellow:#ffd100;
+  --success-500:#2e7d32;
+  --success-100:#d7ecd8;
+  --warning-500:#f2a516;
+  --warning-100:#fdefcf;
+  --danger-500:#c62828;
+  --danger-100:#f7d5d5;
+  --info-500:#1565c0;
+  --info-100:#d3e3f5;
+
+  /* Semantic aliases */
+  --brand:var(--gims-orange-500);
+  --brand-hover:var(--gims-orange-600);
+  --brand-active:var(--gims-orange-700);
+  --brand-contrast:var(--steel-900);
+
+  --bg-page:var(--steel-50);
+  --bg-inverse:var(--steel-900);
+  --surface-card:var(--white);
+  --surface-sunken:var(--steel-100);
+  --surface-raised:var(--white);
+  --surface-inverse:var(--steel-800);
+
+  --text-strong:var(--steel-900);
+  --text-body:var(--steel-700);
+  --text-muted:var(--steel-500);
+  --text-inverse:var(--white);
+  --text-brand:var(--gims-orange-600);
+  --text-on-brand:var(--steel-900);
+
+  --border-subtle:var(--steel-200);
+  --border-default:var(--steel-300);
+  --border-strong:var(--steel-600);
+  --border-brand:var(--gims-orange-500);
+
+  --focus-ring:var(--gims-orange-400);
+
+  /* Typography */
+  --font-display:'Oswald','Barlow Condensed',system-ui,sans-serif;
+  --font-body:'Barlow',system-ui,-apple-system,sans-serif;
+  --font-mono:'Space Mono',ui-monospace,'SFMono-Regular',monospace;
+
+  --text-xs:12px;
+  --text-sm:14px;
+  --text-base:16px;
+  --text-lg:18px;
+  --text-xl:22px;
+  --text-2xl:28px;
+  --text-3xl:36px;
+  --text-4xl:46px;
+  --text-5xl:60px;
+  --text-6xl:78px;
+
+  --leading-tight:1.05;
+  --leading-snug:1.25;
+  --leading-normal:1.5;
+  --leading-relaxed:1.7;
+
+  --weight-regular:400;
+  --weight-medium:500;
+  --weight-semibold:600;
+  --weight-bold:700;
+
+  --tracking-tight:-0.01em;
+  --tracking-normal:0;
+  --tracking-wide:0.04em;
+  --tracking-wider:0.12em;
+
+  /* Spacing, sizing, layout — 4px base grid */
+  --space-0:0;
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:20px;
+  --space-6:24px;
+  --space-8:32px;
+  --space-10:40px;
+  --space-12:48px;
+  --space-16:64px;
+  --space-20:80px;
+  --space-24:96px;
+
+  --container-sm:640px;
+  --container-md:820px;
+  --container-lg:1080px;
+  --container-xl:1280px;
+
+  --control-h-sm:34px;
+  --control-h-md:44px;
+  --control-h-lg:54px;
+
+  /* Radii, borders, shadows — squared industrial, minimal rounding */
+  --radius-none:0;
+  --radius-sm:3px;
+  --radius-md:6px;
+  --radius-lg:10px;
+  --radius-pill:999px;
+
+  --border-width:1px;
+  --border-width-thick:2px;
+  --border-hazard:3px;
+
+  --shadow-xs:0 1px 2px rgba(13,15,18,.08);
+  --shadow-sm:0 1px 3px rgba(13,15,18,.12),0 1px 2px rgba(13,15,18,.08);
+  --shadow-md:0 4px 12px rgba(13,15,18,.14);
+  --shadow-lg:0 12px 28px rgba(13,15,18,.18);
+  --shadow-brand:0 6px 20px rgba(248,120,0,.30);
+  --shadow-focus:0 0 0 3px rgba(251,144,32,.45);
+
+  --duration-fast:120ms;
+  --duration-base:200ms;
+  --duration-slow:320ms;
+  --ease-standard:cubic-bezier(.2,.6,.2,1);
+  --ease-out:cubic-bezier(.16,1,.3,1);
+
+  /* Hazard stripe (mining/safety motif) — use as background-image */
+  --hazard-stripes:repeating-linear-gradient(-45deg,var(--steel-900) 0 14px,var(--gims-orange-500) 14px 28px);
+}
