@@ -24,7 +24,12 @@ css/tokens.css   # GIMS design-system tokens (colors, type, spacing, effects)
 css/main.css     # Component styles (buttons, cards, badges, forms) + layout
 js/main.js       # Enrollment form flow + mobile navigation
 assets/logo.jpg  # GIMS crest
+assets/photos/   # On-site photos from GIMS's own media (Facebook page + press)
 ```
+
+Photo credits: `trainees-ppe.jpg` and `excavator-training.jpg` are stills from
+GIMS's own Facebook posts (facebook.com/gimsghana); `equipment-fleet.jpg` is the
+GIMS equipment photo published with their press coverage on ModernGhana.
 
 ## Design system
 
